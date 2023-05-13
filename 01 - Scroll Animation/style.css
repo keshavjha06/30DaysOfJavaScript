@@ -32,6 +32,7 @@ h1 {
     transform: translateX(200%);
     transition: transform 0.4s ease;
     overflow-x: hidden;
+    /* To remove horizontal scroll */
 
 }
 
