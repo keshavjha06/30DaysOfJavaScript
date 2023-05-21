@@ -8,7 +8,7 @@ textarea.addEventListener('keyup', (e) => {
 
     if (e.key === 'Enter') {
         setTimeout(() => {
-            e.target.value = ''
+            e.target.value = '' // clear the input value
         }, 10)
         randomSelect()
 
@@ -18,7 +18,7 @@ textarea.addEventListener('keyup', (e) => {
 function createTags(input) {
     const tags = input.split(',').filter(tag => tag.trim() !== '').map(tag => tag.trim())
 
-    tagsEl.innerHTML = ''
+    tagsEl.innerHTML = '' // clear the tags element
 
     tags.forEach(tag => {
         const tagEl = document.createElement('span')
